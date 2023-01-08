@@ -1,4 +1,4 @@
-package pages;
+package com.testing.pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;

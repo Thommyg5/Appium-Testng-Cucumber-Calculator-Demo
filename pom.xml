@@ -46,7 +46,6 @@
             <artifactId>cucumber-testng</artifactId>
             <version>7.8.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
@@ -64,6 +63,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 
 </project>

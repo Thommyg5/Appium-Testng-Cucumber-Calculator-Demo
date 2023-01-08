@@ -1,11 +1,10 @@
-package steps;
+package com.testing.steps;
 
+import com.testing.runners.Runner;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
-import pages.CalculatorPage;
-import runners.Runner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,9 +16,9 @@ import static java.util.Map.entry;
 public class CalculatorSteps {
 
     public ArrayList<WebElement> numButtons = new ArrayList<>(Arrays.asList(
-            Runner.calculatorPage.button0,Runner.calculatorPage.button1,Runner.calculatorPage.button2,
-            Runner.calculatorPage.button3,Runner.calculatorPage.button4,Runner.calculatorPage.button5,Runner.calculatorPage.button6,
-            Runner.calculatorPage.button7,Runner.calculatorPage.button8,Runner.calculatorPage.button9));
+            Runner.calculatorPage.button0, Runner.calculatorPage.button1, Runner.calculatorPage.button2,
+            Runner.calculatorPage.button3, Runner.calculatorPage.button4, Runner.calculatorPage.button5, Runner.calculatorPage.button6,
+            Runner.calculatorPage.button7, Runner.calculatorPage.button8, Runner.calculatorPage.button9));
 
     public HashMap<String, WebElement> operations = new HashMap<>(Map.ofEntries(
             entry("%", Runner.calculatorPage.button_modulus),
