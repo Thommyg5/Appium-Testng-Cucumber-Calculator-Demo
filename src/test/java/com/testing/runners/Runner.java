@@ -76,7 +76,7 @@ public class Runner extends AbstractTestNGCucumberTests {
     public void tearDownAutomatic() throws IOException {
         HelperMethods.useCommandLine("C:\\Users\\wutan\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb", "-s", "emulator-5554", "emu", "kill");
         driver.quit();
-        appiumDriverLocalService.close();
+        appiumDriverLocalService.stop();
     }
 
 }
